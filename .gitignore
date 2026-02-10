@@ -31,7 +31,6 @@ logs/*.log
 
 # Configurações sensíveis
 .env
-config/config.yaml
 
 # OS
 .DS_Store
