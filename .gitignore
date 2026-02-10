@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Dados locais
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# Configurações sensíveis
+.env
+config/config.yaml
+
+# OS
+.DS_Store
+Thumbs.db
