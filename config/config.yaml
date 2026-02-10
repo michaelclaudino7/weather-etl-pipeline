@@ -1,0 +1,22 @@
+# Configurações da API
+api:
+  base_url: "https://api.open-meteo.com/v1/forecast"
+  latitude: -23.5505  # São Paulo, SP
+  longitude: -46.6333
+  params:
+    - temperature_2m
+    - precipitation
+    - weather_code
+    - wind_speed_10m
+    - relative_humidity_2m
+
+# Configurações de saída
+output:
+  raw_format: json
+  processed_format: csv
+  include_timestamp: true
+
+# Configurações de log
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
