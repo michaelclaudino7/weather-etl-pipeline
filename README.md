@@ -1,43 +1,43 @@
 # Weather ETL Pipeline
 
-Pipeline ETL para extração, transformação e carregamento de dados climáticos da API Open-Meteo.
+ETL pipeline for extracting, transforming, and loading weather data from Open-Meteo API.
 
-## 📋 Sobre o Projeto
+## 📋 About the Project
 
-Este projeto implementa um pipeline ETL completo que:
-- **Extrai** dados climáticos em tempo real da API Open-Meteo
-- **Transforma** os dados brutos em formato estruturado
-- **Carrega** os dados processados em arquivos CSV/JSON
+This project implements a complete ETL pipeline that:
+- **Extracts** real-time weather data from Open-Meteo API
+- **Transforms** raw data into structured format
+- **Loads** processed data into CSV/JSON files
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 - Python 3.8+
-- Requests (requisições HTTP)
-- Pandas (manipulação de dados)
-- PyYAML (configuração)
+- Requests (HTTP requests)
+- Pandas (data manipulation)
+- PyYAML (configuration)
 
-## 📦 Instalação
+## 📦 Installation
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/weather-etl-pipeline.git
+# Clone the repository
+git clone https://github.com/your-username/weather-etl-pipeline.git
 cd weather-etl-pipeline
 
-# Crie um ambiente virtual
+# Create a virtual environment
 python -m venv venv
 
-# Ative o ambiente virtual
+# Activate the virtual environment
 # Windows:
 venv\Scripts\activate
 # Linux/Mac:
 source venv/bin/activate
 
-# Instale as dependências
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-## ⚙️ Configuração
+## ⚙️ Configuration
 
-Edite o arquivo `config/config.yaml` com as coordenadas desejadas:
+Edit the `config/config.yaml` file with desired coordinates:
 ```yaml
 api:
   base_url: "https://api.open-meteo.com/v1/forecast"
@@ -45,33 +45,33 @@ api:
   longitude: -46.6333
 ```
 
-## 🎯 Uso
+## 🎯 Usage
 ```bash
 python main.py
 ```
 
-Os dados processados serão salvos em `data/processed/`
+Processed data will be saved in `data/processed/`
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 ```
 weather-etl-pipeline/
 ├── data/
-│   ├── raw/              # Dados brutos da API
-│   └── processed/        # Dados processados
+│   ├── raw/              # Raw API data
+│   └── processed/        # Processed data
 ├── src/
-│   ├── extract.py        # Extração de dados
-│   ├── transform.py      # Transformação
-│   └── load.py           # Carregamento
+│   ├── extract.py        # Data extraction
+│   ├── transform.py      # Transformation
+│   └── load.py           # Loading
 ├── config/
-│   └── config.yaml       # Configurações
-├── logs/                 # Logs da aplicação
-├── main.py              # Orquestrador
-└── requirements.txt     # Dependências
+│   └── config.yaml       # Configuration
+├── logs/                 # Application logs
+├── main.py              # Orchestrator
+└── requirements.txt     # Dependencies
 ```
 
-## 📊 Dados Coletados
+## 📊 Collected Data
 
-- Temperatura atual (°C)
-- Precipitação (mm)
-- Código do clima
-- Timestamp da coleta
+- Current temperature (°C)
+- Precipitation (mm)
+- Weather code
+- Collection timestamp
